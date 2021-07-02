@@ -407,6 +407,11 @@ header .header__img {
   background: rgba(250, 212, 0, 0.15);
 }
 
+.box__wrapper .box .learn a {
+  text-decoration: none;
+  color: #23303e;
+}
+
 .transform__img {
   background: url("../images/mobile/image-transform.jpg");
   background-position: center;
