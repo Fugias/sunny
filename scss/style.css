@@ -401,6 +401,7 @@ header .header__img {
   bottom: 0;
   border-radius: 2rem;
   cursor: pointer;
+  pointer-events: none;
 }
 
 .box__wrapper .box .learn .yellow {
