@@ -587,6 +587,8 @@ footer .footer__text {
 
 footer .footer__text h4 {
   cursor: pointer;
+  -webkit-transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
 }
 
 footer .footer__text h4:hover {
@@ -605,6 +607,8 @@ footer .footer__images {
 footer .footer__images img {
   cursor: pointer;
   padding-right: 2rem;
+  -webkit-transition: 0.25s all ease-in-out;
+  transition: 0.25s all ease-in-out;
 }
 
 footer .footer__images img:hover {
