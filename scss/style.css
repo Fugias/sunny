@@ -400,6 +400,7 @@ header .header__img {
   height: 7px;
   bottom: 0;
   border-radius: 2rem;
+  cursor: pointer;
 }
 
 .box__wrapper .box .learn .yellow {
