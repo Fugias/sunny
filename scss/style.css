@@ -438,6 +438,11 @@ header .header__img {
   .box__wrapper .box {
     text-align: center;
   }
+  .learn__line {
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
   .transform__box {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;

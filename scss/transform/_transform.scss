@@ -139,7 +139,16 @@
            text-align: center;
         }
 
+        
+
     }
+
+
+    .learn__line  {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
 
      .transform__box {
          order: 2;
