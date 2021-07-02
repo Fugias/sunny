@@ -12,6 +12,9 @@ footer {
         padding: 2rem 0rem;
         h4 {
             cursor: pointer;
+            &:hover {
+                transform: translateY(-3px) scale(1.1);
+            }
         }
         h4:nth-of-type(2) {
             padding: 0rem 2rem;
@@ -23,6 +26,9 @@ footer {
         img {
             cursor: pointer;
             padding-right: 2rem;
+            &:hover { 
+                transform: translateY(-3px) scale(1.1);
+            }
         }
     }
 }
