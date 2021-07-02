@@ -260,7 +260,6 @@ header .header__img {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -268,7 +267,7 @@ header .header__img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  max-width: 1200px;
+  width: 100vw;
 }
 
 .box__wrapper:last-child .box {
@@ -278,15 +277,12 @@ header .header__img {
 
 .box__wrapper:last-child .box img {
   width: 50vw;
-  max-width: 600px;
 }
 
 .box__wrapper:last-child .box__text {
   text-align: center;
   position: absolute;
-  max-width: 300px;
   padding: 0rem 2rem;
-  width: 100%;
   top: 60%;
   left: 50%;
   -webkit-transform: translateX(-50%);
@@ -321,6 +317,21 @@ header .header__img {
   position: relative;
 }
 
+.box__wrapper .box .box__text__transform {
+  max-width: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
 .box__wrapper .box h3 {
   color: #23303e;
   margin-bottom: 2rem;
@@ -341,14 +352,14 @@ header .header__img {
   border-bottom: 5px solid #fad400;
 }
 
-.box__wrapper .transform__img {
+.transform__img {
   background: url("../images/mobile/image-transform.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.box__wrapper .stand__img {
+.stand__img {
   background: url("../images/mobile/image-stand-out.jpg");
   background-position: center;
   background-repeat: no-repeat;
@@ -390,6 +401,18 @@ header .header__img {
   }
   .pc {
     display: block;
+  }
+  .transform__img {
+    background: url("../images/desktop/image-transform.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .stand__img {
+    background: url("../images/desktop/image-stand-out.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 }
 
@@ -516,6 +539,7 @@ footer .footer__images {
 }
 
 footer .footer__images img {
+  cursor: pointer;
   padding-right: 2rem;
 }
 /*# sourceMappingURL=style.css.map */

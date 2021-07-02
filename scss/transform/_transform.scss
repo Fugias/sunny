@@ -3,28 +3,25 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
 .box__wrapper {
     display: flex;
-    max-width: 1200px;
+    width: 100vw;
     &:last-child {
         .box {
             min-height: 0px;
             padding: 0;
+
             img {
                 width: 50vw;
-                max-width: 600px;
             }
 
             &__text {
                 text-align: center;
                 position: absolute;
-                max-width: 300px;
                 padding: 0rem 2rem;
-                width: 100%;
                 top: 60%;
                 left: 50%;
                 transform: translateX(-50%);
@@ -44,6 +41,7 @@
     }
 
     .box {
+
         min-height: 500px;
         width: 100%;
         display: flex;
@@ -51,6 +49,17 @@
         flex-direction: column;
         padding: 4rem;
         position: relative;
+
+        
+        .box__text__transform {
+            max-width: 500px;
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            margin: 0 auto;
+
+        }
+
         h3 {
             color: $color--desaturated--blue;
             margin-bottom: 2rem;
@@ -72,20 +81,19 @@
         
         
     }
-     .transform__img {
-         background: url("../images/mobile/image-transform.jpg");
-         background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-     }
-     .stand__img {
-         background: url("../images/mobile/image-stand-out.jpg");
-        //  background-position-x: 50%;
-        //  background-position-y: 40%;
-        background-position: center;
-         background-repeat: no-repeat;
-         background-size: cover;
-    }
+}
+
+.transform__img {
+    background: url("../images/mobile/image-transform.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.stand__img {
+    background: url("../images/mobile/image-stand-out.jpg");
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .pc {
@@ -126,4 +134,17 @@
     .pc {
         display: block;
     }
+
+    .transform__img {
+        background: url("../images/desktop/image-transform.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .stand__img {
+        background: url("../images/desktop/image-stand-out.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+   }
 }
